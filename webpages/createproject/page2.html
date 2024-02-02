@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>wecode.createProject()</title>
+        <link rel="stylesheet" href="/webpages/createproject/page2.css" /> 
+        <script defer type="module" src="/webpages/createproject/createproject.js"></script>
+        <script defer src="/common/sidebar.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+    </head>
+    <body>
+      <div class="header">
+        <div id="header-content">
+            <!-- Insert Code Here for Logo -->
+            <div id="header-text">WeCode</div>
+        </div>
+      </div>
+      <div id="sidebar">
+        <ul class="list-group">
+          <li
+            class="list-group-item"
+            style="background-color: rgba(0, 0, 0, 0)"
+          >
+            <button id="home-button" class="sidebar-button">
+              Home
+            </button>
+          </li>
+          <li
+            class="list-group-item"
+            style="background-color: rgba(0, 0, 0, 0)"
+          >
+            <button id="create-project-button" class="sidebar-button">
+              Create Project
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="project-details">
+          <div class="center-info">
+            <h1 class="project-name">Create New Project</h1>
+            <p class="details-text">Fill in the details to create a new programming project</p>
+          </div>
+          <div class="project-creating-details">
+            <div id="preetham-fuck-you">
+              <form id="form-field">
+                <div id="input-group">
+                  <label for="project-name-input" style="padding-bottom: 10px;">Project Name:</label>
+                  <br>
+                  <input style="padding-left: 15px;" type="text" id="project-name-input" name="project-name-input" placeholder="Enter Project Name" required>
+                  <br>
+                  <label for="project-name-input" style="padding: 10px 0px 10px 0px;">Project Description:</label>
+                  <br>
+                  <input style="padding-left: 15px;" type="text" id="project-description-input" name="project-description-input" placeholder="Enter Project Description" >
+                </div>
+                <div id="project-buttons">
+                  <button id="create-button" role="button" type="submit">Create</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>wecode.collaboration()</title>
+        <link rel="stylesheet" href="coding.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="/node_modules/socket.io/client-dist/socket.io.js"></script>
+        <script
+            defer
+            type="module"
+            src="/webpages/codingspace/codinglogic.js"
+        ></script>
+        <script defer type="module" src="/common/sidebar.js"></script>
+        <script defer type="module" src="shareButton.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div id="header-content">
+                <!-- Insert Code Here for Logo -->
+                <div id="header-text">WeCode</div>
+            </div>
+        </div>
+        <div id="sidebar">
+            <ul class="list-group">
+                <li
+                    class="list-group-item"
+                    style="background-color: rgba(0, 0, 0, 0)"
+                >
+                    <button id="home-button" class="sidebar-button">
+                        Home
+                    </button>
+                </li>
+                <li
+                    class="list-group-item"
+                    style="background-color: rgba(0, 0, 0, 0)"
+                >
+                    <button id="create-project-button" class="sidebar-button">
+                        Create Project
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <textarea id="codingSpace" rows="4" cols="50"></textarea>
+            <div class="editor-container">
+                <div class="editor" id="editor"></div>
+            </div>
+            <button id="runButton">Run</button>
+            <button id="shareButton" onclick="">Share</button>
+
+            <div id="output"></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.28.0/ace.js"></script>
+    </body>
+</html>
